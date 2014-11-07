@@ -17,9 +17,8 @@
       <li >3,上司ラブ！</li>
       </ol>
 
-    <form enctype="multipart/form-data" action="__URL__" method="POST">
-    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-    上司で萌える:<input name="userfile" type="file" />
+    <form enctype="multipart/form-data" action="upload.php" method="POST">
+    上司で萌える:<input type="file" name="upfile" size="30" />
     <input type="submit" value="上司をアップロード" />
     </form>
       </div>
