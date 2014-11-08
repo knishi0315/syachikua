@@ -8,7 +8,7 @@ function joushiToImout($filename) {
   // $img_url = "http://stat.ameba.jp/user_images/20120703/12/iruka-blog/3a/90/j/o0400026612060016584.jpg";
   // $path = "ojisan.jpg";
   $path = "files/".$filename;
-  $img_url = "http://orenojs.ddo.jp/test/files/".$filename;
+  $img_url = "http://orenojs.ddo.jp/files/".$filename;
 
   $response = Unirest::get("https://faceplusplus-faceplusplus.p.mashape.com/detection/detect?attribute=glass,pose,gender,age,race,smiling&url=" . $img_url,
     array(
@@ -51,12 +51,12 @@ function joushiToImout($filename) {
     default:
       break;
   }
-  $kami_path = "kami.png";
+  $kami_path = "nekomimi.png";
   $kami = imagecreatefrompng($kami_path);
   
   // scale kami to face_width * 1.2
   list($width_kami, $height_kami) = getimagesize($kami_path);
-  $new_width_kami = $face_width * 1.6;
+  $new_width_kami = $face_width * 1.4;
   $new_height_kami = $height_kami * ( $new_width_kami / $width_kami);
   $scaled_kami = imagecreatetruecolor($width_base, $height_base);
   $alpha = imagecolortransparent($kami);
@@ -66,7 +66,7 @@ function joushiToImout($filename) {
   imagecopyresampled($scaled_kami, $kami, 0, 0, 0, 0, $new_width_kami, $new_height_kami, $width_kami, $height_kami);
 
  
-  $result = imagecopy($base_image, $scaled_kami, $face_center_x - ($new_width_kami / 2), $face_center_y - ($new_height_kami / 2) + $face_center_y * 0.1, 0, 0, $width_base, $height_base);
+  $result = imagecopy($base_image, $scaled_kami, $face_center_x - ($new_width_kami / 2), $face_center_y - ($new_height_kami / 2) + $face_center_y*0.1, 0, 0, $width_base, $height_base);
   
   imagepng($base_image, "files2/".$filename);
 
