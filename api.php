@@ -2,7 +2,7 @@
 //error_reporting(-1);
 require_once dirname(__FILE__).'/unirest-php/lib/Unirest.php';
 
-function getSimilarCelebs($filename) {
+function jushiToImout($filename) {
   // debug.
   // $filename = "ojisan.jpg";
   // $img_url = "http://stat.ameba.jp/user_images/20120703/12/iruka-blog/3a/90/j/o0400026612060016584.jpg";
