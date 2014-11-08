@@ -51,7 +51,7 @@ function joushiToImout($filename) {
     default:
       break;
   }
-  $kami_path = "kami.png";
+  $kami_path = "nekomimi.png";
   $kami = imagecreatefrompng($kami_path);
   
   // scale kami to face_width * 1.2
