@@ -10,10 +10,10 @@
 <a href="index.php"><img src="image/logo.jpg" alt="logo" class="img-responsive col-sm-3" padding=0 margin=0></a>
 <ul class="nav navbar-nav">
 <li>
-<a href=#>俺の上司を投稿</a>
+<a href=./>俺の上司を投稿</a>
 </li>
 <li>
-<a href=#>俺の上司を辱め履歴</a>
+<a href=./list.php>俺の上司を辱め履歴</a>
 </li>
 </div>
 <hr />
