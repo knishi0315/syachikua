@@ -1,14 +1,14 @@
 <?php
-//error_reporting(-1);
+error_reporting(-1);
 require_once dirname(__FILE__).'/unirest-php/lib/Unirest.php';
 
-function jushiToImout($filename) {
+function joushiToImout($filename) {
   // debug.
   // $filename = "ojisan.jpg";
   // $img_url = "http://stat.ameba.jp/user_images/20120703/12/iruka-blog/3a/90/j/o0400026612060016584.jpg";
   // $path = "ojisan.jpg";
   $path = "files/".$filename;
-  $img_url = "http://orenojs.ddo.jp/files/".$filename;
+  $img_url = "http://orenojs.ddo.jp/test/files/".$filename;
 
   $response = Unirest::get("https://faceplusplus-faceplusplus.p.mashape.com/detection/detect?attribute=glass,pose,gender,age,race,smiling&url=" . $img_url,
     array(
@@ -68,8 +68,6 @@ function jushiToImout($filename) {
  
   $result = imagecopy($base_image, $scaled_kami, $face_center_x - ($new_width_kami / 2), $face_center_y - ($new_height_kami / 2) + $face_center_y * 0.1, 0, 0, $width_base, $height_base);
   
-  header('Content-Type: image/png');
-  imagepng($base_image);
   imagepng($base_image, "files2/".$filename);
 
   imagedestroy($kami);
