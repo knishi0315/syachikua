@@ -8,7 +8,7 @@ function joushiToImout($filename) {
   // $img_url = "http://stat.ameba.jp/user_images/20120703/12/iruka-blog/3a/90/j/o0400026612060016584.jpg";
   // $path = "ojisan.jpg";
   $path = "files/".$filename;
-  $img_url = "http://orenojs.ddo.jp/files/".$filename;
+  $img_url = "http://orenojs.ddo.jp/test/files/".$filename;
 
   $response = Unirest::get("https://faceplusplus-faceplusplus.p.mashape.com/detection/detect?attribute=glass,pose,gender,age,race,smiling&url=" . $img_url,
     array(
@@ -51,7 +51,7 @@ function joushiToImout($filename) {
     default:
       break;
   }
-  $kami_path = "nekomimi.png";
+  $kami_path = "kami.png";
   $kami = imagecreatefrompng($kami_path);
   
   // scale kami to face_width * 1.2

@@ -1,7 +1,7 @@
 <div class="col-md-10" >
   <div class="row">
     <div class="col-md-5">
-      <img src=./image/top.jpg class="img-responsive img-rounded" style="width:350px;height:400px;">
+      <img src=./image/top.jpg class="img-responsive img-rounded" >
     </div>
     <div class="col-md-7">
       <h2 class="content-desc">俺の上司がこんなに可愛いわけがないとは！</h4>
