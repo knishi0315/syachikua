@@ -1,4 +1,6 @@
-<hr />
-<div class="text-center footer">
-  <p>---------------------- CopyRight シャチク野郎Aチーム.syachiku,ltd  2014 ----------------------</p>
+<hr>
+<div class="footer">
+  <div class="container">
+    <p class="text-center">&copy;  Shachiku-Yarou A Team 2014</p><br>
+  </div>
 </div>

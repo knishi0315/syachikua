@@ -1,18 +1,24 @@
-
-      <div class="col-sm-9" >
-      <img src=./image/top.jpg class="col-sm-6 img-responsive img-rounded">
-      <p>
-      【俺の上司がこんなに可愛いわけがないとは！】<br>
-       簡単3ステップで上司が可愛い<br>
-      猫耳姿になるサイトです。<br>
-      1,上司画像を勝手に投稿<br>
-      2,上司画像が猫耳上司へ<br>
-      3,上司ラブ！<br>
-      </p>      
-
-    <form enctype="multipart/form-data" action="upload.php" method="POST">
-    上司で萌える:<input type="file" name="upfile" size="30" />
-    <input type="submit" value="上司をアップロード" />
-    </form>
-      </div>
+<div class="col-md-10" >
+  <div class="row">
+    <div class="col-md-5">
+      <img src=./image/top.jpg class="img-responsive img-rounded" style="width:350px;height:400px;">
     </div>
+    <div class="col-md-7">
+      <h2 class="content-desc">俺の上司がこんなに可愛いわけがないとは！</h4>
+      <p>簡単3ステップで上司が可愛い猫耳姿になるサイトです。</p> 
+      <blockquote>
+      <ol>
+      <li>上司画像を勝手に投稿</li>
+      <li>上司画像が猫耳上司へ</li>
+      <li>上司ラブ！</li>
+      </ol>
+      </blockquote>
+
+      <h2 class="content-desc">上司で萌える</h2>
+      <form class="form-signin" role="form" enctype="multipart/form-data" action="upload.php" method="POST">
+        <input type="file" name="upfile" size="30" /><br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">上司をアップロード</button>
+      </form>
+    </div>
+  </div>
+</div>
