@@ -1,4 +1,4 @@
-<div class=contaner col-sm-9>
+<div class="col-md-10">
 <?php
 
 //ディレクトリ・ハンドルをオープン
@@ -13,7 +13,7 @@ while( $file_name = readdir( $res_dir ) ){
     echo "";
   } else {
         //取得したファイル名を表示
-        print "<img src=./files/{$file_name} alt={$file_name} class=img-responsive img-rounded><br>\n";
+        print "<img src=./files2/{$file_name} alt={$file_name} class=img-responsive img-rounded><br>\n";
   }
 
 }

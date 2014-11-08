@@ -1,8 +1,8 @@
-<section class="container">
-<div class="row">
-<p>上司萌え～～～～～～～～～～♪</p>
-<?php
-echo "<img src=./files/" . $_GET['file'] . " class=col-sm-6 img-responsive img-rounded>";
-?>
+<div class="col-md-10">
+	<div class="row">
+		<p>上司萌え～～～～～～～～～～♪</p>
+		<?php
+			echo "<img src=./files2/" . $_GET['file'] . " class=img-responsive img-rounded>";
+		?>
+	</div>
 </div>
-</section>
